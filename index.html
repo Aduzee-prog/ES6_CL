@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show"></p>
+    <p id="show1"></p>
+    
+</body>
+<script>
+    var food = 'pounded Yam';
+    var food = 'rice'
+    food = 'semo'
+    console.log(food);
+    
+    
+    let drink = 'water'
+    // let drink = 'fanta'
+    drink = 'cocacola'
+    console.log(drink);
+    
+
+    const pi = 'chicken Pi'
+    // const pi = 'meat Pi'
+    // pi = 'pizza'
+    console.log(pi);
+
+    function mariam() {
+        console.log('make noise');
+    }
+
+    const caro = () => {
+        console.log('make noise with Mariam');
+    }
+
+    function maria(food) {
+        console.log(`I wil eat ${food}`);
+    }
+    
+    maria('Rice')
+    const car = (name) => {
+        console.log(name);
+    }
+    car('Mike')
+
+    let foodArray = ['Rice','Beans','Yam','Eba','Amala']
+    // for(i=0; i<foodArray.length; i++){
+    //     let data = foodArray[i]
+    //     show.innerHTML += `<p>${i+1}. ${data}</p>`
+    // }
+    foodArray.map((data, i)=>{
+        show.innerHTML += `<p>${i+1}.${data}</p>`
+    })
+
+    setTimeout(()=>{
+        console.log('I will show after 4 second');
+        
+    },4000)
+
+    // Return statement
+    const testing = (city) => {
+        console.log(city); 
+    }
+
+    let ilu = testing('Ibadan')
+    console.log(ilu);
+
+    function add(){
+        return 90        
+    }
+    console.log(add());
+    
+
+    let sum = add()
+    show1.innerHTML = add()
+     
+</script>
+</html>
